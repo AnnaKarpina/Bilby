@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilby — Анимационный шедевр</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Фиксированный фон с градиентом -->
+    <div class="bg-gradient"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <!-- Блок с постером и текстом -->
+            <div class="hero-layout">
+                <div class="hero-poster">
+                    <!-- Здесь ссылка на постер. Замените URL на локальный, если скачаете картинку -->
+                    <img src="https://raw.githubusercontent.com/AnnaKarpina/Bilby/main/poster.png" alt="Постер мультфильма Bilby">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Bilby</h1>
+                    <p class="hero-subtitle">История о неожиданной дружбе в суровых условиях Австралии</p>
+                    <div class="scroll-indicator">
+                        <span>Листайте вниз</span>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция: О мультфильме -->
+        <section class="section container">
+            <h2 class="section-title">О мультфильме</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="label">Год</span>
+                    <span class="value">2018</span>
+                </div>
+                <div class="info-card">
+                    <span class="label">Студия</span>
+                    <span class="value">DreamWorks</span>
+                </div>
+                <div class="info-card">
+                    <span class="label">Режиссёры</span>
+                    <span class="value">П. Перифель, Дж. Санс, Л. Топаз</span>
+                </div>
+                <div class="info-card">
+                    <span class="label">Длительность</span>
+                    <span class="value">8 минут</span>
+                </div>
+            </div>
+            <div class="content-box glass">
+                <p class="description">
+                    «Bilby» — это короткометражный анимационный фильм, рассказывающий о сумчатом барсуке (билби) по имени Перри. 
+                    Жизнь в австралийской пустыне полна опасностей, и Перри, привыкший выживать в одиночку, 
+                    неожиданно берёт на себя заботу о беззащитном птенце альбатроса. 
+                    Не имея диалогов, фильм передаёт всю гамму эмоций через анимацию и музыку.
+                </p>
+            </div>
+        </section>
+
+        <!-- Секция: Сюжет (Увеличенный блок) -->
+        <section class="section container">
+            <h2 class="section-title">Сюжет</h2>
+            <div class="content-box glass large-story-box">
+                <p class="description large-text">
+                    Перри — билби, живущий в пустыне. Однажды он спасает маленького птенца от хищников и невольно становится его защитником. 
+                    Теперь ему предстоит не только добывать пищу для себя, но и оберегать малыша от змей, ящериц и других опасностей. 
+                    Со временем между ними возникает глубокая привязанность. Это история о том, как забота и ответственность меняют жизнь к лучшему.
+                </p>
+            </div>
+        </section>
+
+        <!-- Секция: Раскадровка -->
+        <section class="section container" id="storyline-section">
+            <h2 class="section-title">Краткий сюжет</h2>
+            <div class="storyline-container">
+                <div class="story-step glass">
+                    <div class="story-img-wrapper">
+                        <!-- Добавлен класс zoomable-img для обработки клика -->
+                        <img src="https://raw.githubusercontent.com/AnnaKarpina/Bilby/main/foto1.png" alt="Встреча" class="zoomable-img">
+                    </div>
+                    <div class="story-content">
+                        <h3>1. Встреча</h3>
+                        <p>Перри находит беспомощного птенца, выпавшего из гнезда.</p>
+                    </div>
+                </div>
+                <div class="story-step glass">
+                    <div class="story-img-wrapper">
+                        <img src="https://raw.githubusercontent.com/AnnaKarpina/Bilby/main/foto2.png" alt="Опасности пустыни" class="zoomable-img">
+                    </div>
+                    <div class="story-content">
+                        <h3>2. Опасности пустыни</h3>
+                        <p>Билби защищает малыша от змей и хищников.</p>
+                    </div>
+                </div>
+                <div class="story-step glass">
+                    <div class="story-img-wrapper">
+                        <img src="https://raw.githubusercontent.com/AnnaKarpina/Bilby/main/foto3.png" alt="Обучение" class="zoomable-img">
+                    </div>
+                    <div class="story-content">
+                        <h3>3. Обучение</h3>
+                        <p>Перри учит птенца летать.</p>
+                    </div>
+                </div>
+                <div class="story-step glass">
+                    <div class="story-img-wrapper">
+                        <img src="https://raw.githubusercontent.com/AnnaKarpina/Bilby/main/foto4.png" alt="Финал" class="zoomable-img">
+                    </div>
+                    <div class="story-content">
+                        <h3>4. Финал</h3>
+                        <p>Птенец вырастает и учится летать, но их дружба остается навсегда.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Модальное окно для просмотра картинок (добавьте перед закрывающим тегом </body> или после <footer>) -->
+        <div id="image-modal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="zoomed-image">
+        </div>
+
+        <!-- МАРКЕР: После этого блока начинается смена палитры -->
+        <div id="palette-trigger" style="height: 1px; width: 100%;"></div>
+
+        <!-- Секция: Награды -->
+        <section class="section container">
+            <h2 class="section-title">Награды и номинации</h2>
+            <ul class="awards-list">
+                <li class="glass">🏆 <strong>Номинация на «Оскар»</strong> — Лучший анимационный короткометражный фильм (2019).</li>
+                <li class="glass">🏆 <strong>Приз зрительских симпатий</strong> — Palm Springs International ShortFest.</li>
+                <li class="glass">🏆 <strong>Jury Award</strong> — SIGGRAPH (2018).</li>
+            </ul>
+        </section>
+
+        <!-- Секция: Смысл сюжета (Редактируемый) -->
+        <section class="section container">
+            <h2 class="section-title">Смысл сюжета</h2>
+            <div class="content-box glass editable-section">
+                <p class="description" id="editable-meaning">
+                    Мультфильм «Bilby» — это трогательная история о том, как забота о другом меняет нас самих. 
+                    Даже в самых суровых условиях можно найти тепло и смысл, если рядом есть тот, кого нужно защищать.
+                </p>
+                <div class="edit-controls">
+                    <button id="edit-btn" class="btn">Редактировать текст</button>
+                    <button id="save-btn" class="btn" style="display: none;">Сохранить</button>
+                </div>
+            </div>
+        </section>
+
+                       <!-- Секция: Просмотр мультфильма -->
+        <section class="section container" id="watch-section">
+            <h2 class="section-title">Смотреть мультфильм</h2>
+            <div class="content-box glass video-container">
+                <!-- Используем тег video для локального файла -->
+                <video controls class="local-video">
+                    <source src="images/5018784631527.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Сайт создан в ознакомительных целях. Bilby © DreamWorks Animation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
